@@ -1637,7 +1637,9 @@ validateMemoryIsMapped(
                     ") is less than Memory Object's offset (" PRINTF_SIZE_T_SPECIFIER ").",
                     funcName, pMemRanges[i].offset, mem_element->second.memRange.offset);
             }
-
+// LUGMAL
+// LUGMAL
+// LUGMAL
             if ((mem_element->second.memRange.size != VK_WHOLE_SIZE) &&
                 ((mem_element->second.memRange.offset + mem_element->second.memRange.size) < (pMemRanges[i].offset + pMemRanges[i].size))) {
                 skipCall |= log_msg(my_data->report_data, VK_DEBUG_REPORT_ERROR_BIT_EXT,
